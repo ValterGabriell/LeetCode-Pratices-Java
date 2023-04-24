@@ -1,4 +1,4 @@
-package org.example.heranca;
+package org.example.heranca_enum;
 
 public enum TipoPagamento {
     DEBITO {

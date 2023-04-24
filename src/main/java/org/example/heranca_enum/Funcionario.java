@@ -1,4 +1,4 @@
-package org.example.heranca;
+package org.example.heranca_enum;
 
 public class Funcionario extends Pessoa {
     private double salario;
@@ -19,6 +19,10 @@ public class Funcionario extends Pessoa {
 
     public void relatorioPagamento(double valor) {
         System.out.println("Eu " + this.nome + " recebi um salario de " + (this.tipoPagamento.calcularDesconto(valor) + this.salario));
+    }
+
+    public void getIdentificador() {
+        System.out.println(this.pessoa.getIdentificador());
     }
 
     public double getSalario() {

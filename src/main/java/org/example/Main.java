@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.heranca.Funcionario;
-import org.example.heranca.TipoPagamento;
-import org.example.heranca.TipoPessoa;
+import org.example.heranca_enum.Funcionario;
+import org.example.heranca_enum.TipoPagamento;
+import org.example.heranca_enum.TipoPessoa;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +14,6 @@ public class Main {
         funcionario.setTipoPagamento(TipoPagamento.CREDITO);
         funcionario.imprime();
         funcionario.relatorioPagamento(150);
+        funcionario.getIdentificador();
     }
 }
