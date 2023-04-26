@@ -8,8 +8,8 @@ import org.example.polimorfismo.servico.CalculaImposto;
 public class ProdutoTest02 {
     public static void main(String[] args) {
         Produto produto = new Computador("MAC", 3000);
-        Tomate tomate = new Tomate("Tomate", 20);
-        tomate.setDataValidade("11/12/2021");
+        Produto tomate = new Tomate("Tomate", 20);
+        ((Tomate) tomate).setDataValidade("11/12/2021");
 
         CalculaImposto.calculaImposto(tomate);
         System.out.println("--------------------");

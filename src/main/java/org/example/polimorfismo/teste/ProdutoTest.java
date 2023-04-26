@@ -7,11 +7,10 @@ import org.example.polimorfismo.servico.CalculaImposto;
 
 public class ProdutoTest {
     public static void main(String[] args) {
-        Computador computador = new Computador("NUC09", 11000);
-        Tomate tomate = new Tomate("tomate", 10);
-        Televisao tv = new Televisao("Samgung 50\"", 5000);
-        CalculaImposto.calculaImposto(computador);
+        Tomate tomate = new Tomate("Arroz Branco", 6);
+        tomate.setDataValidade("25/12/2023");
+        Computador vg = new Computador("PS5", 6000);
         CalculaImposto.calculaImposto(tomate);
-        CalculaImposto.calculaImposto(tv);
+        CalculaImposto.calculaImposto(vg);
     }
 }
