@@ -1,7 +1,7 @@
 package org.example.excecoes.teste.runtime;
 
 import java.io.FileNotFoundException;
-import java.sql.SQLException;
+import java.io.IOException;
 
 public class RunTimeTest04 {
     public static void main(String[] args) {
@@ -16,9 +16,5 @@ public class RunTimeTest04 {
         } catch (RuntimeException e) {
             System.out.println("Dentro RunTimeException");
         }
-    }
-
-    private static void talvezLance() throws SQLException, FileNotFoundException{
-
     }
 }
