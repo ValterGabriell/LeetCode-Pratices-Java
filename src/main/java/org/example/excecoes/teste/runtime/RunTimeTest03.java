@@ -10,7 +10,7 @@ public class RunTimeTest03 {
         try {
             System.out.println("Abrindo arquivo");
             System.out.println("Escrevendo dados no arquivo");
-//            throw new RuntimeException();
+//            throw new.txt RuntimeException();
             return "conexao aberta";
         } catch (Exception e) {
             e.printStackTrace();
