@@ -1,7 +1,7 @@
 package org.example.collections.quals;
 
-import org.example.collections.quals.dominio.SmarthPhone;
-import org.example.collections.quals.dominio.Televisao;
+import org.example.collections.dominio.SmarthPhone;
+import org.example.collections.dominio.Televisao;
 
 
 public class EqualsTest01 {

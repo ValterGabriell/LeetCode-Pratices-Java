@@ -1,4 +1,4 @@
-package org.example.collections.quals.dominio;
+package org.example.collections.dominio;
 
 public class Televisao {
     private String marca;

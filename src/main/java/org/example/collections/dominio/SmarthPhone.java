@@ -1,4 +1,4 @@
-package org.example.collections.quals.dominio;
+package org.example.collections.dominio;
 
 public class SmarthPhone {
     private String serialNumber;
@@ -38,5 +38,13 @@ public class SmarthPhone {
     @Override
     public int hashCode() {
         return serialNumber == null ? 0 : this.serialNumber.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "SmarthPhone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
     }
 }
