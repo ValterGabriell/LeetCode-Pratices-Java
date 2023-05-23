@@ -1,6 +1,8 @@
 package org.example.Streams;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class StreamTest07 {
     public static void main(String[] args) {
@@ -12,5 +14,7 @@ public class StreamTest07 {
 
         list.stream().reduce((x, y) -> x > y ? x : y).ifPresent(System.out::println);
         list.stream().reduce(0, Integer::max);
+
+
     }
 }
