@@ -1,0 +1,45 @@
+HashMap:
+
+Armazenamento de Dados Simples: Use o HashMap quando precisar armazenar pares chave-valor simples sem a necessidade de
+ manter uma ordem específica das chaves. Por exemplo, pode ser usado para armazenar dados de configuração em um
+ aplicativo.
+
+Rápido Acesso a Dados: Se você precisa de acesso rápido aos dados por meio de chaves,
+o HashMap é uma escolha eficiente devido ao seu tempo médio de acesso O(1).
+
+Não há necessidade de ordenação: Quando você não precisa que os dados sejam ordenados por chave,
+o HashMap é uma escolha lógica.
+
+
+
+
+
+TreeMap:
+
+Ordenação por Chave: Use o TreeMap quando precisar armazenar pares chave-valor e desejar que as chaves sejam mantidas
+em ordem natural (ordenadas). Isso é útil quando você precisa iterar pelas chaves em ordem.
+
+Intervalo de Busca: Se você precisa buscar elementos em um intervalo específico de chaves
+(por exemplo, todas as chaves entre A e B), o TreeMap é uma escolha eficiente devido à ordenação das chaves.
+
+Chaves Personalizadas: O TreeMap permite que você use chaves personalizadas definindo um comparador,
+o que pode ser útil quando a ordem natural das chaves não atende aos seus requisitos.
+
+
+
+
+
+NavigableMap (por meio de TreeMap):
+
+Busca de Elementos Próximos: Use o NavigableMap quando precisar encontrar elementos próximos a uma chave específica.
+ Os métodos lowerKey, higherKey, floorKey e ceilingKey podem ajudar nesses casos.
+
+Submapas: Quando você precisa criar subconjuntos do mapa com base em intervalos de chaves
+(por exemplo, todas as chaves entre A e B), o NavigableMap é altamente conveniente por meio dos métodos subMap,
+headMap e tailMap.
+
+Ordenação Personalizada: Se você precisa de uma ordenação personalizada para suas chaves,
+o NavigableMap (juntamente com o TreeMap personalizado) permite que você atenda a essa necessidade.
+
+Iteração em Ordem Decrescente: Se você precisar iterar pelas chaves em ordem decrescente,
+o método descendingKeySet é útil.

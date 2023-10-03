@@ -1,29 +1,42 @@
 package org.example.biblioteca;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MainApp {
     public static void main(String[] args) {
-        Biblioteca biblioteca = new Biblioteca();
-        Livro l1 = new Livro("Aventuras de Sherlock Holmes", "978-3-16-148410-0", "Arthur Conan Doyle", 1892);
-        Livro l2 = new Livro("1984", "978-0-452-28423-4", "George Orwell", 1949);
-        Livro l3 = new Livro("O Senhor dos Anéis", "978-0-618-25713-7", "J.R.R. Tolkien", 1954);
-        Livro l4 = new Livro("Cem Anos de Solidão", "978-8-50-100966-5", "Gabriel García Márquez", 1967);
-        Livro l5 = new Livro("Harry Potter e a Pedra Filosofal", "978-8-51-701056-5", "J.K. Rowling", 1997);
-        Livro l6 = new Livro("O Pequeno Príncipe", "978-9-65-126515-2", "Antoine de Saint-Exupéry", 1943);
-        Livro l7 = new Livro("O Pequeno Príncipe", "978-9-65-126515-2", "Antoine de Saint-Exupéry", 1943);
+        Produto produto1 = new Produto(10, 29.99, "Camiseta");
+        Produto produto2 = new Produto(5, 49.99, "Tênis");
+        Produto produto3 = new Produto(2, 9.99, "Caneta");
+        Produto produto4 = new Produto(3, 199.99, "Smartphone");
+        Produto produto5 = new Produto(8, 59.99, "Livro");
+        Produto produto6 = new Produto(8, 59.99, "AABBAA");
+        Produto produto7 = new Produto(8, 59.99, "DEEEBA");
+        Produto produto8 = new Produto(8, 59.99, "ZEEEEBAA");
 
-        biblioteca.adicionarNovoLivro(l1);
-        biblioteca.adicionarNovoLivro(l2);
-        biblioteca.adicionarNovoLivro(l3);
-        biblioteca.adicionarNovoLivro(l4);
-        biblioteca.adicionarNovoLivro(l5);
-        biblioteca.adicionarNovoLivro(l6);
-        biblioteca.adicionarNovoLivro(l7);
+        List<Produto> produtos = new ArrayList<>();
+        produtos.add(produto1);
+        produtos.add(produto2);
+        produtos.add(produto3);
+        produtos.add(produto4);
+        produtos.add(produto5);
 
-        biblioteca.buscarTodosOsLivros();
-        System.out.println();
-        biblioteca.ordenarLivrosPorTitulo();
-        System.out.println();
-        biblioteca.ordenarLivrosPorAno();
+        Collections.sort(produtos);
+
+        int posicao = Collections.binarySearch(produtos, produto8);
+        // -4-1 = -5
+        System.out.println("POSICAO DO PRODUTO: " + posicao);
+        if (posicao < 0){
+            // -(-1) = 1
+            posicao = -posicao - 1;
+            produtos.add(posicao, produto8);
+        }
+        System.out.println(produtos);
+
+
+
+
 
 
     }
