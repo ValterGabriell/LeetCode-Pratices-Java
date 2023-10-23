@@ -10,6 +10,7 @@ public class MainApp {
         display.accept(10);
 
 
+
         List<String> words = new ArrayList<>();
         words.add("Valter");
         words.add("Gabriel");

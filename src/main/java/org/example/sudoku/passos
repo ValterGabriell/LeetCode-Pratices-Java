@@ -1,0 +1,11 @@
+A grelha do Sudoku é composta por 9x9 espaços.
+Só podes usar números de 1 a 9.
+Cada bloco 3×3 pode apenas conter números de 1 a 9.
+Cada coluna vertical pode apenas conter números de 1 a 9.
+Cada linha horizontal pode apenas conter números de 1 a 9.
+Cada número no bloco 3×3, na coluna vertical ou na linha horizontal só pode ser usado uma vez.
+O jogo termina quando toda a grelha do Sudoku estiver preenchida corretamente com números.
+
+ 1-> verificar se a linha horizontal possui apenas de 1 a 9 sem repetir
+ 2 -> verificar se a coluna vertical possui de 1 a 9 sem repetir
+ 3 -> verificar se o 3 x 3 possui de 1 a 9 sem repetir
