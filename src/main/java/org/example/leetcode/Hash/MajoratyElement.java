@@ -1,4 +1,4 @@
-package org.example.leetcode.MajorityElement;
+package org.example.leetcode.Hash;
 
 import java.util.HashMap;
 
